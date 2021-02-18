@@ -1,0 +1,84 @@
+$primaryColor:#f30eae;
+$timerHandle:#311735;
+$timerBase: #602b69;
+
+@mixin flex{
+    display:flex;
+    flex-flow:row wrap;
+}
+
+*{
+    font-size:1rem;//also 16px;
+    font-family:Arial;
+    ::before, ::after{
+        box-sizing:border-box;    
+    }
+}
+
+body{
+    background:$primaryColor;
+}
+
+div{
+    border:0px solid black;
+}
+
+h1{
+    color:white;
+    text-align:center;
+    margin-top:100px;
+    font-size:xx-large;
+}
+
+.clock{
+    @include flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+
+    .time{
+        min-height:100px;
+        width:15%;
+        background:$timerBase;
+        border:2px solid $timerBase;
+
+        p{
+            font-size: 2rem;
+            font-weight:bolder;
+            text-align:center;
+            
+        }
+
+        span{
+            display:block;
+            border-top:2px solid $timerHandle;
+            font-weight:bold;
+            text-align:center;
+            color:white;
+            background:$timerHandle;
+        }
+    }
+}
+
+button{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+    background: $timerHandle;
+    padding:20px;
+    margin-top:50px;
+    border:1px solid $timerHandle;
+}
+
+p{
+    text-align:center;
+    font-size:2rem;
+    font-weight:bolder;
+
+    a{
+        text-decoration:none;
+        color:darkblue;
+        font-size:2rem;
+    }
+}

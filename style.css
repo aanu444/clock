@@ -1,0 +1,87 @@
+* {
+  font-size: 1rem;
+  font-family: Arial;
+}
+
+* ::before, * ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #f30eae;
+}
+
+div {
+  border: 0px solid black;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  font-size: xx-large;
+}
+
+.clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.clock .time {
+  min-height: 100px;
+  width: 15%;
+  background: #602b69;
+  border: 2px solid #602b69;
+}
+
+.clock .time p {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.clock .time span {
+  display: block;
+  border-top: 2px solid #311735;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: #311735;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background: #311735;
+  padding: 20px;
+  margin-top: 50px;
+  border: 1px solid #311735;
+}
+
+p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+p a {
+  text-decoration: none;
+  color: darkblue;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
